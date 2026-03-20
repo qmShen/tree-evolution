@@ -1,0 +1,47 @@
+\firstsection{Introduction}
+
+\maketitle
+
+Tree structures are ubiquitous across various domains, including organizational hierarchies, computational execution plans, program architectures, and file systems. 
+In real-world scenarios, these tree structures often evolve over time. 
+For instance, organizations restructure to align with business needs, execution plans are iteratively refined from initial drafts, and program structures evolve through maintenance and refactoring. 
+Consequently, understanding and visualizing the evolution of tree structures over time holds significant analytical and decision-making value.
+
+
+This study focuses on evolving trees, where both data and topology co-evolve over time. 
+We define the changes between consecutive time points as the tree's evolution process. 
+Tree evolution exhibits three prominent characteristics:
+\textbf{Locality}: Within short time intervals, changes are typically localized, while major transformations often align with pivotal events, such as organizational overhauls or plan resets.
+\textbf{Wide variability}: The number of nodes and hierarchical depth can vary dramatically across time, with scales ranging from tens to tens of thousands of nodes.
+\textbf{Long sequences}: The timeline may span hundreds or thousands of snapshots, necessitating the ability to capture both long-term global trends and fine-grained local details.
+To address core questions of how and why a tree evolves, analysts must fluidly navigate between global patterns (e.g., periodic structural reorganizations, evolutionary rhythms, or load shifts) and local trajectories (e.g., the creation, deletion, migration, or attribute changes of individual nodes).
+
+Several visualization methods exist for dynamic tree structures:
+\textbf{Stable treemap}: These methods enhance layout and transition strategies to preserve spatial and topological consistency across time, often using animations to depict changes. 
+While visually coherent and engaging, animation-based approaches are less effective for memorizing processes and are unsuitable for complex, long-sequence analyses.
+\textbf{Stream Graph}: 
+The methods encode aggregated metrics (e.g., subtree size or weight) through stream widths, utilizing nested relationships among flows to represent hierarchical structures. This approach visualze the trends of metrics and evolution of structure in a static view ideal for long-term analysis. 
+However, they often obscure topological and hierarchical semantics, making it challenging to identify where structural changes occur or to accommodate all types of tree evolution.
+\textbf{Graph sequence}. These combine graph and sequence visualization by discretizing time series into snapshots, employing static tree representations (e.g., treemaps, icicle plots, or node-link diagrams) organized sequentially for cross-time comparison and tracking. 
+These methods can prioritize either topological or hierarchical structures based on requirements. However, existing methods designed for general graph data are not optimized for effectively visualizing the evolution process of tree structures or tracking the trajectories of significant nodes.
+
+To address these challenges, we propose NAME, an interactive visual analytics system for tree evolution. This system enables users to systematically explore why a tree evolves, when and where changes occur, and who is affected by these changes. The approach is built upon a graph sequence visualization framework, with designs tailored to the key characteristics of tree evolution.
+First, we introduce a set of extensible tree evolution event primitives (e.g., node birth/death, attribute mutation, subtree migration/reconnection, subtree merging/splitting, and weight mutation) along with corresponding automated detection and matching strategies. 
+By extracting events, we compress long snapshot sequences into event sequences, significantly reducing the complexity of long-sequence analysis while providing a consistent semantic foundation for subsequent phase segmentation and pattern recognition.
+Next, we design a structurally stable node-link visual encoding to represent the evolution process over continuous time periods. Combined with graph difference visualizations, we enhance annotations for critical changes, enabling analysts to quickly identify significant structural shifts and anomalies while preserving topological semantics and tracing the context of changes.
+Finally, we propose an ego-centric node highlight method to intuitively display the detailed evolution processes of individual nodes, supporting multi-level sequence overviews and phase segmentation.
+
+The major contributions of this work can be summarized as follows:
+
+\squishlist
+\item We conduct an in-depth analysis and survey of the requirements for tree evolution processes, distilling the fundamental evolution patterns.
+
+\item We propose a novel tree visualization method capable of supporting continuous graph change processes.
+
+\item We develop a suite of analysis tools that address multi-level analytical needs, including sequence analysis and ego-centric node analysis.
+
+\item We present case studies drawn from database systems and LLM (Large Language Model) trees to demonstrate the system's efficacy.
+
+\squishend
+
+The remaining parts of the paper are organized as follows:

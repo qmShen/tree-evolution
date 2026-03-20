@@ -1,0 +1,250 @@
+\begin{thebibliography}{10}
+
+\bibitem{DBLP:conf/ieeevast/BremmLHSWH11}
+S.~Bremm, T.~von Landesberger, M.~Hess, T.~Schreck, P.~Weil, and K.~Hamacher.
+\newblock Interactive visual comparison of multiple trees.
+\newblock In {\em 6th {IEEE} Conference on Visual Analytics Science and
+  Technology, {IEEE} {VAST} 2011, Providence, RI, USA, October 23-28, 2011},
+  pp. 31--40. {IEEE} Computer Society, 2011.
+  \href{https://doi.org/10.1109/VAST.2011.6102439}
+{doi: {{%
+10\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}1109\discretionary{/}{%
+}{/}VAST\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}2011\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}6102439}}}
+
+
+\bibitem{DBLP:journals/tvcg/BurchVBDW11}
+M.~Burch, C.~Vehlow, F.~Beck, S.~Diehl, and D.~Weiskopf.
+\newblock Parallel edge splatting for scalable dynamic graph visualization.
+\newblock {\em {IEEE} Trans. Vis. Comput. Graph.}, 17(12):2344--2353, 2011.
+  \href{https://doi.org/10.1109/TVCG.2011.226}
+{doi: {{%
+10\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}1109\discretionary{/}{%
+}{/}TVCG\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}2011\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}226}}}
+
+
+\bibitem{DBLP:journals/tvcg/ByronW08}
+L.~Byron and M.~Wattenberg.
+\newblock Stacked graphs - geometry {\&} aesthetics.
+\newblock {\em {IEEE} Trans. Vis. Comput. Graph.}, 14(6):1245--1252, 2008.
+  \href{https://doi.org/10.1109/TVCG.2008.166}
+{doi: {{%
+10\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}1109\discretionary{/}{%
+}{/}TVCG\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}2008\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}166}}}
+
+
+\bibitem{card2006time}
+S.~K. Card, B.~Suh, B.~A. Pendleton, J.~Heer, and J.~W. Bodnar.
+\newblock Time tree: Exploring time changing hierarchies.
+\newblock In {\em 2006 IEEE Symposium On Visual Analytics Science And
+  Technology}, pp. 3--10. IEEE, 2006.
+
+\bibitem{DBLP:journals/tvcg/CuencaSWP18}
+E.~Cuenca, A.~Sallaberry, F.~Y. Wang, and P.~Poncelet.
+\newblock Multistream: {A} multiresolution streamgraph approach to explore
+  hierarchical time series.
+\newblock {\em {IEEE} Trans. Vis. Comput. Graph.}, 24(12):3160--3173, 2018.
+  \href{https://doi.org/10.1109/TVCG.2018.2796591}
+{doi: {{%
+10\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}1109\discretionary{/}{%
+}{/}TVCG\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}2018\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}2796591}}}
+
+
+\bibitem{DBLP:journals/tvcg/CuiLWW14}
+W.~Cui, S.~Liu, Z.~Wu, and H.~Wei.
+\newblock How hierarchical topics evolve in large text corpora.
+\newblock {\em {IEEE} Trans. Vis. Comput. Graph.}, 20(12):2281--2290, 2014.
+  \href{https://doi.org/10.1109/TVCG.2014.2346433}
+{doi: {{%
+10\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}1109\discretionary{/}{%
+}{/}TVCG\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}2014\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}2346433}}}
+
+
+\bibitem{DBLP:conf/ieeevast/GomezBPS11}
+J.~A.~G. G{\'{o}}mez, A.~Buck{-}Coleman, C.~Plaisant, and B.~Shneiderman.
+\newblock Treeversity: Comparing tree structures by topology and node's
+  attributes differences.
+\newblock In {\em 6th {IEEE} Conference on Visual Analytics Science and
+  Technology, {IEEE} {VAST} 2011, Providence, RI, USA, October 23-28, 2011},
+  pp. 275--276. {IEEE} Computer Society, 2011.
+  \href{https://doi.org/10.1109/VAST.2011.6102471}
+{doi: {{%
+10\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}1109\discretionary{/}{%
+}{/}VAST\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}2011\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}6102471}}}
+
+
+\bibitem{DBLP:journals/tvcg/GomezPPS13}
+J.~A.~G. G{\'{o}}mez, M.~L. Pack, C.~Plaisant, and B.~Shneiderman.
+\newblock Visualizing change over time using dynamic hierarchies: Treeversity2
+  and the stemview.
+\newblock {\em {IEEE} Trans. Vis. Comput. Graph.}, 19(12):2566--2575, 2013.
+  \href{https://doi.org/10.1109/TVCG.2013.231}
+{doi: {{%
+10\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}1109\discretionary{/}{%
+}{/}TVCG\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}2013\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}231}}}
+
+
+\bibitem{DBLP:conf/iv/GrahamK08}
+M.~Graham and J.~B. Kennedy.
+\newblock Multiform views of multiple trees.
+\newblock In {\em 12th International Conference on Information Visualisation,
+  {IV} 2008, 8-11 July 2008, London, {UK}}, pp. 252--257. {IEEE} Computer
+  Society, 2008. \href{https://doi.org/10.1109/IV.2008.21}
+{doi: {{%
+10\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}1109\discretionary{/}{%
+}{/}IV\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}2008\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}21}}}
+
+
+\bibitem{DBLP:conf/gd/GrayLAK22}
+K.~Gray, M.~Li, A.~R. Ahmed, and S.~G. Kobourov.
+\newblock Visualizing evolving trees.
+\newblock In P.~Angelini and R.~von Hanxleden, eds., {\em Graph Drawing and
+  Network Visualization - 30th International Symposium, {GD} 2022, Tokyo,
+  Japan, September 13-16, 2022, Revised Selected Papers}, vol. 13764 of {\em
+  Lecture Notes in Computer Science}, pp. 319--335. Springer, 2022.
+  \href{https://doi.org/10.1007/978-3-031-22203-0 23}
+{doi: {{%
+10\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}1007\discretionary{/}{%
+}{/}978\discretionary{%
+}{-}{-}3\discretionary{%
+}{-}{-}031\discretionary{%
+}{-}{-}22203\discretionary{%
+}{-}{-}0 23}}}
+
+
+\bibitem{DBLP:journals/cgf/GreilichBD09}
+M.~Greilich, M.~Burch, and S.~Diehl.
+\newblock Visualizing the evolution of compound digraphs with timearctrees.
+\newblock {\em Comput. Graph. Forum}, 28(3):975--982, 2009.
+  \href{https://doi.org/10.1111/J.1467-8659.2009.01451.X}
+{doi: {{%
+10\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}1111\discretionary{/}{%
+}{/}J\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}1467\discretionary{%
+}{-}{-}8659\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}2009\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}01451\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}X}}}
+
+
+\bibitem{DBLP:conf/grapp/HahnTMD14}
+S.~Hahn, J.~Tr{\"{u}}mper, D.~Moritz, and J.~D{\"{o}}llner.
+\newblock Visualization of varying hierarchies by stable layout of voronoi
+  treemaps.
+\newblock In R.~S. Laramee, A.~Kerren, and J.~Braz, eds., {\em Proceedings of
+  the 5th International Conference on Information Visualization Theory and
+  Applications, {IVAPP} 2014, Lisbon, Portugal, 5-8 January, 2014}, pp. 50--58.
+  SciTePress, 2014. \href{https://doi.org/10.5220/0004686200500058}
+{doi: {{%
+10\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}5220\discretionary{/}{%
+}{/}0004686200500058}}}
+
+
+\bibitem{DBLP:journals/tvcg/HavreHWN02}
+S.~Havre, E.~G. Hetzler, P.~Whitney, and L.~T. Nowell.
+\newblock Themeriver: Visualizing thematic changes in large document
+  collections.
+\newblock {\em {IEEE} Trans. Vis. Comput. Graph.}, 8(1):9--20, 2002.
+  \href{https://doi.org/10.1109/2945.981848}
+{doi: {{%
+10\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}1109\discretionary{/}{%
+}{/}2945\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}981848}}}
+
+
+\bibitem{DBLP:journals/tvcg/KoppW19}
+W.~K{\"{o}}pp and T.~Weinkauf.
+\newblock Temporal treemaps: Static visualization of evolving trees.
+\newblock {\em {IEEE} Trans. Vis. Comput. Graph.}, 25(1):534--543, 2019.
+  \href{https://doi.org/10.1109/TVCG.2018.2865265}
+{doi: {{%
+10\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}1109\discretionary{/}{%
+}{/}TVCG\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}2018\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}2865265}}}
+
+
+\bibitem{DBLP:journals/tvcg/SondagSV18}
+M.~Sondag, B.~Speckmann, and K.~Verbeek.
+\newblock Stable treemaps via local moves.
+\newblock {\em {IEEE} Trans. Vis. Comput. Graph.}, 24(1):729--738, 2018.
+  \href{https://doi.org/10.1109/TVCG.2017.2745140}
+{doi: {{%
+10\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}1109\discretionary{/}{%
+}{/}TVCG\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}2017\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}2745140}}}
+
+
+\bibitem{DBLP:journals/tvcg/TakC13}
+S.~Tak and A.~Cockburn.
+\newblock Enhanced spatial stability with hilbert and moore treemaps.
+\newblock {\em {IEEE} Trans. Vis. Comput. Graph.}, 19(1):141--148, 2013.
+  \href{https://doi.org/10.1109/TVCG.2012.108}
+{doi: {{%
+10\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}1109\discretionary{/}{%
+}{/}TVCG\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}2012\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}108}}}
+
+
+\bibitem{DBLP:journals/tvcg/TuS07}
+Y.~Tu and H.~Shen.
+\newblock Visualizing changes of hierarchical data using treemaps.
+\newblock {\em {IEEE} Trans. Vis. Comput. Graph.}, 13(6):1286--1293, 2007.
+  \href{https://doi.org/10.1109/TVCG.2007.70529}
+{doi: {{%
+10\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}1109\discretionary{/}{%
+}{/}TVCG\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}2007\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}70529}}}
+
+
+\bibitem{DBLP:conf/sibgrapi/VernierCT18}
+E.~F. Vernier, J.~L.~D. Comba, and A.~C. Telea.
+\newblock A stable greedy insertion treemap algorithm for software evolution
+  visualization.
+\newblock In {\em 31st {SIBGRAPI} Conference on Graphics, Patterns and Images,
+  {SIBGRAPI} 2018, Paran{\'{a}}, Brazil, October 29 - Nov. 1, 2018}, pp.
+  158--165. {IEEE} Computer Society, 2018.
+  \href{https://doi.org/10.1109/SIBGRAPI.2018.00027}
+{doi: {{%
+10\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}1109\discretionary{/}{%
+}{/}SIBGRAPI\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}2018\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}00027}}}
+
+
+\end{thebibliography}
