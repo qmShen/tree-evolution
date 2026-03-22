@@ -64,11 +64,11 @@
 
 %% Abstract section.
 \abstract{%
-  \lipsum[1] % filler text. Replace with your abstract.
-  %
-  %% We recommend that you link to your supplemental material here in the abstract, as well
-  %% as in the Supplemental Materials section at the end.
-  A free copy of this paper and all supplemental materials are available at \url{https://OSF.IO/2NBSG}.
+  Tree-structured data are common in many domains, such as organizational hierarchies, logical query plans in relational databases, and abstract syntax trees in program analysis. In these applications, tree structures often evolve over time. Analyzing tree evolution is important for understanding how hierarchical structures change, identifying critical transition steps, and diagnosing abnormal or inefficient processes. However, visual analytics of tree evolution remains challenging. First, comparing tree topologies is difficult for analysts, and this challenge becomes even greater in evolution analysis, where they must not only identify structural differences but also understand how one tree transforms into the next. Second, local topological changes are often scattered across large unchanged contexts, making it difficult to highlight critical differences without losing structural context. Third, critical changes in long evolution sequences are usually sparse, making it hard to summarize major trends while preserving key transition steps.
+
+  To address these challenges, we propose TRACE, a topology-aware visual analytics framework for the evolution of tree structures. TRACE estimates corresponding changes between adjacent trees, thereby representing the evolution as a sequence of local change units for analysis. It further extracts difference-aware substructures that preserve essential context while reducing visual complexity, supporting effective comparison of critical topological changes. TRACE simplifies long sequences based on the distribution of differences to reveal salient intervals, key transition steps, and overall evolutionary trends. Moreover, TRACE supports multi-granularity analysis from local changes to global evolution patterns.
+
+  We evaluate TRACE through case studies on multiple datasets and user interviews. The results show that TRACE helps analysts better understand evolution processes in tree-structured data, locate key structural changes, and identify important patterns and transitions in long sequences.
 }
 
 %% Keywords that describe your work. Will show as 'Index Terms' in journal
