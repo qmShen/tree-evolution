@@ -1,0 +1,229 @@
+\section{Data Model and Problem Definition}
+\label{sec:data_model}
+
+\subsection{Tree, Tree Sequence, and Evolution}
+
+We consider a rooted tree as the basic structural unit in our data. A tree is defined as
+\[
+T = (V, E, r),
+\]
+where $V$ is the set of nodes, $E \subseteq V \times V$ is the set of directed parent-child edges, and $r \in V$ is the root node. Each node $v \in V$ may be associated with a label, an attribute vector, or other application-specific metadata. In the following, we mainly focus on the hierarchical structure of the tree, while allowing node attributes to be incorporated when needed.
+
+For a node $v \in V$, we denote by $parent(v)$ its parent node, and by $children(v)$ the set of its child nodes. The subtree rooted at $v$ is denoted by
+\[
+T(v) = (V(v), E(v), v),
+\]
+where $V(v) \subseteq V$ contains $v$ and all its descendants, and $E(v) \subseteq E$ contains the edges induced by $V(v)$.
+
+To model structural evolution over time, we consider not a single tree, but an ordered sequence of trees:
+\[
+\mathcal{T} = \langle T_1, T_2, \dots, T_n \rangle,
+\]
+where each $T_i$ represents the tree observed at the $i$-th time step, version, or evolutionary stage. We refer to $\mathcal{T}$ as a \emph{tree sequence}. The ordering of trees may be induced by time, iteration, version number, or any domain-specific progression. In this work, we assume that the sequence order is meaningful and that structural evolution can be analyzed by comparing adjacent trees in the sequence.
+
+Given a tree sequence $\mathcal{T}$, we define \emph{tree evolution} as the structural transformation process across consecutive trees. Rather than modeling evolution only at the level of the full sequence, we decompose it into a series of local transitions between adjacent trees. For two adjacent trees $T_i$ and $T_{i+1}$, the transition
+\[
+\delta_i : T_i \rightarrow T_{i+1}
+\]
+is referred to as an \emph{evolution step}. Each evolution step captures the structural changes occurring between two consecutive states of the tree sequence.
+
+This adjacency-based formulation has two advantages. First, it enables analysts to inspect evolution incrementally, which is often more cognitively manageable than comparing distant trees directly. Second, it provides a natural basis for identifying local structural changes and tracking how such changes accumulate over the entire sequence. In this work, our primary analytical focus is on the comparison of adjacent trees, i.e., the characterization of each evolution step $\delta_i$.
+
+\subsection{Structural Difference and Difference Nodes}
+
+To quantify the amount of change in an evolution step, we model the difference between $T_i$ and $T_{i+1}$ using tree edit operations. Specifically, we consider a transformation sequence that converts $T_i$ into $T_{i+1}$ through a set of elementary edit operations, such as node insertion, node deletion, and node relabeling or substitution, depending on the application setting.
+
+The \emph{tree edit distance} between two adjacent trees is defined as the minimum cost required to transform one tree into the other:
+\[
+\mathrm{TED}(T_i, T_{i+1}).
+\]
+This value provides a quantitative measure of structural difference. A larger edit distance indicates a greater amount of structural change between the two adjacent stages.
+
+However, the edit distance alone only reflects \emph{how much} the structure has changed, but does not explicitly reveal \emph{where} the changes occur or how they are structurally related. Therefore, beyond this scalar quantity, we derive a set of structural difference elements from the edit sequence.
+
+Let
+\[
+D_i = \{d_1, d_2, \dots, d_m\}
+\]
+denote the set of nodes involved in the minimum edit sequence between $T_i$ and $T_{i+1}$. We refer to these nodes as \emph{difference nodes}. Intuitively, a difference node marks a local position in the tree where a structural modification occurs in the corresponding evolution step. Difference nodes constitute the finest-grained representation of structural change. They preserve the exact locations of local edits and therefore provide maximal detail about the transformation between adjacent trees.
+
+Nevertheless, directly presenting all difference nodes is often insufficient for effective analysis. When the number of changes is large, or when changed nodes are scattered across the hierarchy, a pure node-level representation may impose excessive cognitive burden and obscure higher-level structural patterns. This motivates the need for more structured abstractions built on top of difference nodes.
+
+\subsection{Difference Subtrees and Difference Forests}
+
+To organize difference nodes into interpretable structural units, we introduce the concepts of \emph{difference subtree} and \emph{difference forest}.
+
+For a tree $T$ and a node $r \in V$, the subtree $T(r)$ is called a difference subtree if it contains at least one difference node. More generally, for a subset of difference nodes $X \subseteq D_i$, if all nodes in $X$ are contained in $T(r)$, then $T(r)$ is said to be a difference subtree for $X$. Among all such subtrees that cover $X$, we define the one with the smallest structural extent as the \emph{minimum difference subtree} for $X$, denoted as
+\[
+T^*(X).
+\]
+Depending on the precise implementation, the structural extent may be measured by the number of nodes, the number of edges, or the induced hierarchical span. In the simplest setting, $T^*(X)$ can be understood as the smallest rooted subtree that covers all nodes in $X$.
+
+The difference subtree provides a localized structural context for a set of changes. Rather than showing isolated difference nodes one by one, it groups nearby or structurally related differences into a higher-level region, thereby supporting more interpretable qualitative analysis.
+
+In many evolution steps, difference nodes are distributed across multiple disconnected or weakly related regions of the tree. In such cases, a single difference subtree may be too coarse to summarize the changes effectively. We therefore define a \emph{difference forest} as a set of pairwise disjoint difference subtrees that jointly cover a target set of difference nodes. Formally, let $X \subseteq D_i$ be a set of difference nodes. A set of subtrees
+\[
+F = \{T(r_1), T(r_2), \dots, T(r_k)\}
+\]
+is called a difference forest for $X$ if the following two conditions hold:
+\[
+X \subseteq \bigcup_{j=1}^{k} V(r_j),
+\]
+and
+\[
+V(r_p) \cap V(r_q) = \emptyset, \quad \forall p \neq q.
+\]
+That is, every node in $X$ is covered by at least one subtree in the forest, and any two subtrees in the forest are non-overlapping.
+
+A \emph{minimum difference forest} for $X$ is a difference forest in which each subtree is a minimum difference subtree for the subset of difference nodes it covers. Importantly, for a given set of difference nodes, multiple valid minimum difference forests may exist. This non-uniqueness reflects the fact that structural changes can be summarized at multiple granularities, depending on how one chooses to partition the difference nodes into disjoint structural regions.
+
+Difference forests serve as an intermediate representation between two extremes:
+\squishlist
+\item presenting every difference node individually, which preserves maximal detail but may lead to clutter; and
+\item summarizing all changes with a single large subtree, which reduces complexity but may obscure local distinctions.
+\squishend
+
+This representation is particularly suitable for visual analysis, as it enables structured summaries of differences at multiple levels of abstraction while preserving a clear, non-overlapping decomposition of changed regions.
+
+\subsection{Difference Summarization and Problem Statement}
+
+The definitions above establish a hierarchy of difference representations:
+\squishlist
+\item \emph{tree edit distance} captures the overall magnitude of change;
+\item \emph{difference nodes} capture exact local changes;
+\item \emph{difference subtrees} capture local structural contexts of change; and
+\item \emph{difference forests} capture structured summaries of distributed changes.
+\squishend
+
+Based on this hierarchy, we formulate adjacent-tree comparison as a \emph{difference summarization problem}. Given two adjacent trees $T_i$ and $T_{i+1}$, we aim to derive a representation that is both informative and cognitively manageable.
+
+A trivial solution is to directly show all difference nodes. This preserves all local details but may overwhelm analysts when changes are numerous. Another trivial solution is to aggregate all difference nodes into a single large subtree. This reduces the number of visual elements but may hide important structural details. Therefore, the central challenge is to identify an appropriate difference forest that balances \emph{detail preservation} and \emph{representation simplicity}. This trade-off forms the basis of our method.
+
+Given a tree sequence
+\[
+\mathcal{T} = \langle T_1, T_2, \dots, T_n \rangle,
+\]
+our task is to analyze each evolution step $\delta_i : T_i \rightarrow T_{i+1}$ by jointly supporting:
+\squishlist
+\item \emph{quantitative comparison}, through the tree edit distance $\mathrm{TED}(T_i, T_{i+1})$; and
+\item \emph{qualitative comparison}, through a structured summary of the corresponding difference nodes.
+\squishend
+
+More specifically, for each adjacent tree pair $(T_i, T_{i+1})$, we seek to construct a difference forest $F_i$ over the difference node set $D_i$ such that:
+\squishlist
+\item all important structural differences are covered;
+\item the resulting summary remains structurally interpretable; and
+\item the complexity of inspecting the changes is reduced without sacrificing excessive detail.
+\squishend
+
+In the next section, we describe how this data model supports the design of our method for constructing and selecting appropriate difference forests.
+
+\subsection{Difference Forest Construction Algorithm}
+
+Based on the above data model, we formulate difference forest construction as a constrained grouping problem over the set of difference nodes. Given the difference node set $D_i$, our goal is to construct a difference forest
+\[
+F_i = \{T(r_1), T(r_2), \dots, T(r_k)\}
+\]
+such that all difference nodes are covered, the subtrees are pairwise disjoint, and the resulting forest achieves a balance between preserving local details and reducing cognitive complexity.
+
+\stitle{Basic idea}
+The key idea is to treat each difference node as an initial atomic group and then iteratively merge structurally related groups in a bottom-up manner. Each group of difference nodes is represented by its minimum difference subtree. The algorithm starts from the finest-grained representation, where each difference node forms an individual subtree, and progressively combines groups if the merge leads to a better trade-off between structural fidelity and representational simplicity. The merging process terminates when no valid merge can further improve the objective.
+
+\stitle{Group representation}
+Let $G = \{g_1, g_2, \dots, g_k\}$ denote a partition of the difference node set $D_i$, where each group $g_j \subseteq D_i$ contains one or more difference nodes, and
+\[
+\bigcup_j g_j = D_i, \qquad g_p \cap g_q = \emptyset \; \mbox{for} \; p \neq q.
+\]
+For each group $g_j$, we compute its minimum difference subtree $T^*(g_j)$. The corresponding difference forest is therefore
+\[
+F_i(G) = \{T^*(g_1), T^*(g_2), \dots, T^*(g_k)\}.
+\]
+A valid forest additionally requires that these subtrees are pairwise disjoint.
+
+\stitle{Objective function}
+To evaluate the quality of a difference forest, we define an objective function that balances three criteria: contextual redundancy, intra-subtree dispersion, and forest complexity. Specifically, for a forest $F$, we define
+\[
+\mathcal{L}(F) = \alpha \cdot C_{\mathrm{extra}}(F) + \beta \cdot C_{\mathrm{disp}}(F) + \lambda \cdot C_{\mathrm{count}}(F),
+\]
+where $\alpha$, $\beta$, and $\lambda$ are user-controllable weights.
+
+The first term measures the amount of redundant context introduced by the forest:
+\[
+C_{\mathrm{extra}}(F) = \sum_{S \in F} \left( |V(S)| - |D_i \cap V(S)| \right).
+\]
+This term penalizes subtrees that include many non-difference nodes and therefore become overly coarse.
+
+The second term measures how dispersed the difference nodes are within each subtree:
+\[
+C_{\mathrm{disp}}(F) = \sum_{S \in F} \frac{1}{|D_S|} \sum_{d \in D_S} dist(root(S), d),
+\]
+where $D_S = D_i \cap V(S)$ and $dist(root(S), d)$ denotes the tree distance from the root of subtree $S$ to difference node $d$. This term favors subtrees whose covered difference nodes are structurally compact.
+
+The third term controls the complexity of the forest:
+\[
+C_{\mathrm{count}}(F) = |F|.
+\]
+This term penalizes forests with too many subtrees and helps reduce visual and cognitive fragmentation.
+
+Our goal is to find a forest that minimizes $\mathcal{L}(F)$ subject to the coverage and non-overlap constraints:
+\[
+D_i \subseteq \bigcup_{S \in F} V(S),
+\]
+\[
+V(S_p) \cap V(S_q) = \emptyset, \quad \forall S_p, S_q \in F,\; p \neq q.
+\]
+
+\stitle{Greedy bottom-up optimization}
+We adopt a greedy bottom-up optimization strategy. Initially, each difference node $d \in D_i$ forms a singleton group $g = \{d\}$, and the initial forest consists of the corresponding minimum difference subtrees. At each iteration, the algorithm considers merging two existing groups $g_a$ and $g_b$ into a new group
+\[
+g_{ab} = g_a \cup g_b.
+\]
+The merged group is represented by the minimum difference subtree $T^*(g_{ab})$.
+
+A merge is considered valid only if the new subtree remains disjoint from all other subtrees currently in the forest. For each valid candidate merge, the algorithm computes the updated forest and evaluates the change in objective value:
+\[
+\Delta \mathcal{L} = \mathcal{L}(F') - \mathcal{L}(F).
+\]
+The algorithm then selects the merge with the largest reduction in objective value. If the best candidate satisfies $\Delta \mathcal{L} < 0$, the merge is accepted and the forest is updated. Otherwise, the process terminates.
+
+This strategy naturally proceeds from fine-grained local differences to coarser structural summaries, and the optimization stops at the point where further abstraction would introduce more loss than benefit.
+
+\stitle{Algorithm}
+The procedure is summarized below.
+
+\begin{verbatim}
+Algorithm 1: Difference Forest Construction
+Input: rooted tree T, difference node set D_i, weights alpha, beta, lambda
+Output: pairwise disjoint difference forest F
+
+1: Initialize groups G = { {d} | d in D_i }
+2: Compute F = { T*(g) | g in G }
+3: repeat
+4:     bestDelta <- 0
+5:     bestMerge <- null
+6:     for each pair (g_a, g_b) in G do
+7:         g_ab <- g_a union g_b
+8:         S_ab <- T*(g_ab)
+9:         if S_ab overlaps any subtree in F \ {T*(g_a), T*(g_b)} then
+10:            continue
+11:        end if
+12:        F' <- (F \ {T*(g_a), T*(g_b)}) union {S_ab}
+13:        delta <- L(F') - L(F)
+14:        if delta < bestDelta then
+15:            bestDelta <- delta
+16:            bestMerge <- (g_a, g_b, S_ab)
+17:        end if
+18:    end for
+19:    if bestMerge != null then
+20:        update G and F using bestMerge
+21:    end if
+22: until bestMerge == null
+23: return F
+\end{verbatim}
+
+\stitle{Discussion}
+The proposed algorithm has several desirable properties. First, it is consistent with the hierarchical structure of trees: each merge corresponds to a structurally meaningful aggregation of difference nodes. Second, because disjointness is explicitly enforced during optimization, the resulting forest always satisfies the non-overlap constraint in our definition. Third, the algorithm can naturally produce multi-granularity results: the intermediate forests generated during optimization form a hierarchy of summaries, allowing analysts to move from fine-grained local changes to coarser structural overviews.
+
+In the next section, we build upon this algorithm to design a visual analytics workflow for adjacent-tree comparison and long-sequence evolution analysis.
+
+\subsection{Our solutions}
