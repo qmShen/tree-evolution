@@ -221,6 +221,7 @@ Output: pairwise disjoint difference forest F
 23: return F
 \end{verbatim}
 
+
 \stitle{Discussion}
 The proposed algorithm has several desirable properties. First, it is consistent with the hierarchical structure of trees: each merge corresponds to a structurally meaningful aggregation of difference nodes. Second, because disjointness is explicitly enforced during optimization, the resulting forest always satisfies the non-overlap constraint in our definition. Third, the algorithm can naturally produce multi-granularity results: the intermediate forests generated during optimization form a hierarchy of summaries, allowing analysts to move from fine-grained local changes to coarser structural overviews.
 
