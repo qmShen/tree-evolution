@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  29 MAR 2026 02:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  29 MAR 2026 02:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -965,11 +965,11 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 \abstractwidth=\skip90
-<figs/CypressView.jpg, id=123, 1260.71pt x 497.86pt>
-File: figs/CypressView.jpg Graphic file (type jpg)
-<use figs/CypressView.jpg>
-Package pdftex.def Info: figs/CypressView.jpg  used on input line 4.
-(pdftex.def)             Requested size: 467.22528pt x 184.50919pt.
+<figs/teaser.png, id=123, 965.5272pt x 544.434pt>
+File: figs/teaser.png Graphic file (type png)
+<use figs/teaser.png>
+Package pdftex.def Info: figs/teaser.png  used on input line 4.
+(pdftex.def)             Requested size: 467.22528pt x 263.46034pt.
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
  4.
 
@@ -1010,13 +1010,16 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
-<diamondrule.pdf, id=124, 213.79875pt x 12.045pt>
+<diamondrule.pdf, id=125, 213.79875pt x 12.045pt>
 File: diamondrule.pdf Graphic file (type pdf)
 <use diamondrule.pdf>
 Package pdftex.def Info: diamondrule.pdf  used on input line 4.
 (pdftex.def)             Requested size: 213.79822pt x 12.04495pt.
 
-Underfull \vbox (badness 1895) has occurred while \output is active []
+Underfull \vbox (badness 1057) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \vbox (2.26305pt too high) has occurred while \output is active []
@@ -1026,13 +1029,19 @@ Overfull \vbox (2.26305pt too high) has occurred while \output is active []
 3/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
 
- <./figs/CypressView.jpg> <./diamondrule.pdf>]) (./sec/rel.tex [2]) (./sec/task
-.tex
+ <./figs/teaser.png> <./diamondrule.pdf>]) (./sec/rel.tex [2]
+Underfull \vbox (badness 4492) has occurred while \output is active []
+
+)
+(./sec/task.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Overfull \vbox (2.26305pt too high) has occurred while \output is active []
 
 
 [3]
-<figs/framework.png, id=211, 945.5325pt x 461.47406pt>
+<figs/framework.png, id=213, 945.5325pt x 461.47406pt>
 File: figs/framework.png Graphic file (type png)
 <use figs/framework.png>
 Package pdftex.def Info: figs/framework.png  used on input line 61.
@@ -1047,9 +1056,10 @@ Underfull \hbox (badness 8094) in paragraph at lines 110--111
 the tree edit dis-tance
  []
 
+[6]
 LaTeX Font Info:    Trying to load font information for T1+txtt on input line 1
 96.
-(c:/texlive/2023/texmf-dist/tex/latex/txfonts/t1txtt.fd
+ (c:/texlive/2023/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -1073,8 +1083,8 @@ Overfull \hbox (3.83052pt too wide) in paragraph at lines 224--224
 []\T1/txtt/m/n/9 12:        F' <- (F \ {T*(g_a), T*(g_b)}) union {S_ab}[] 
  []
 
-[6]) (./sec/vis.tex
-<figs/vis/Temp.png, id=234, 964.0818pt x 330.9966pt>
+) (./sec/vis.tex
+<figs/vis/Temp.png, id=235, 964.0818pt x 330.9966pt>
 File: figs/vis/Temp.png Graphic file (type png)
 <use figs/vis/Temp.png>
 Package pdftex.def Info: figs/vis/Temp.png  used on input line 14.
@@ -1084,17 +1094,17 @@ File: figs/vis/Hierarchy.png Graphic file (type png)
 <use figs/vis/Hierarchy.png>
 Package pdftex.def Info: figs/vis/Hierarchy.png  used on input line 33.
 (pdftex.def)             Requested size: 226.18555pt x 48.50887pt.
-<figs/vis/tree.png, id=239, 859.5312pt x 368.577pt>
-File: figs/vis/tree.png Graphic file (type png)
-<use figs/vis/tree.png>
-Package pdftex.def Info: figs/vis/tree.png  used on input line 49.
-(pdftex.def)             Requested size: 226.18555pt x 96.99193pt.
 
 Overfull \vbox (2.26305pt too high) has occurred while \output is active []
 
 
-[7 <./figs/vis/Temp.png> <./figs/vis/Hierarchy.png>]) (./sec/case.tex [8 <./fig
-s/vis/tree.png>]) (./main.bbl (./main.brf)
+[7 <./figs/vis/Temp.png> <./figs/vis/Hierarchy.png>]
+<figs/vis/tree.png, id=249, 859.5312pt x 368.577pt>
+File: figs/vis/tree.png Graphic file (type png)
+<use figs/vis/tree.png>
+Package pdftex.def Info: figs/vis/tree.png  used on input line 49.
+(pdftex.def)             Requested size: 226.18555pt x 96.99193pt.
+) (./sec/case.tex [8 <./figs/vis/tree.png>]) (./main.bbl (./main.brf)
 \tf@brf=\write5
 \openout5 = `main.brf'.
 
@@ -1156,16 +1166,16 @@ LaTeX Warning: There were undefined references.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: BAD7A88A03BD60200B9DE0D410FEB281;5971.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: 1FC6C1F86B6AF8F61BA57BC00D958795;1712.
+(rerunfilecheck)             Checksum: 311FBD0F0E04BBAA19ABA3277CFD1696;1712.
  ) 
 Here is how much of TeX's memory you used:
- 29249 strings out of 474165
- 548478 string characters out of 5749497
- 1951542 words of memory out of 5000000
- 50546 multiletter control sequences out of 15000+600000
+ 29246 strings out of 474165
+ 548370 string characters out of 5749497
+ 1956542 words of memory out of 5000000
+ 50543 multiletter control sequences out of 15000+600000
  636559 words of font info for 374 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 92i,8n,93p,1553b,666s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 92i,8n,93p,1553b,555s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/tex
 live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dis
@@ -1178,9 +1188,9 @@ onts/type1/urw/symbol/usyr.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/symb
 ol/usyr.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/te
 xlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2023/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (9 pages, 1414638 bytes).
+Output written on main.pdf (9 pages, 1293115 bytes).
 PDF statistics:
- 373 PDF objects out of 1000 (max. 8388607)
+ 374 PDF objects out of 1000 (max. 8388607)
  322 compressed objects within 4 object streams
  77 named destinations out of 1000 (max. 500000)
  70419 words of extra memory for PDF output out of 74296 (max. 10000000)
