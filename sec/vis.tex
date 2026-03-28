@@ -8,7 +8,19 @@ The \emph{statistics view} is positioned at the top of the interface and provide
 \subsection{Statistics View}
 \label{sec:statistics_view}
 
-The statistics view provides the global entry point for temporal analysis. Its main purpose is to summarize how structural change is distributed along the evolution sequence, allowing analysts to first understand the overall process before inspecting individual trees or local edits. Instead of presenting every evolution step with equal emphasis, the statistics view highlights the relative intensity, frequency, or concentration of structural changes over time, thereby helping users quickly identify salient intervals and potential transition points.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.9\linewidth]{figs/vis/Temp.png}
+
+	\caption{Temporal view}
+	\label{fig:temp}
+
+\end{figure}
+
+
+
+The statistics view provides the global entry point for temporal analysis, shown as Fig.~\ref{fig:temp}. Its main purpose is to summarize how structural change is distributed along the evolution sequence, allowing analysts to first understand the overall process before inspecting individual trees or local edits. Instead of presenting every evolution step with equal emphasis, the statistics view highlights the relative intensity, frequency, or concentration of structural changes over time, thereby helping users quickly identify salient intervals and potential transition points.
 
 To support this goal, the statistics view encodes time-oriented summary measures derived from adjacent-tree differencing, such as change magnitude, the number of difference nodes, or the distribution of difference-aware structures across steps. These summaries give analysts a compact overview of whether the sequence evolves smoothly, exhibits abrupt transitions, or contains repeated bursts of activity. The view therefore directly supports sequence-level summarization and salient transition identification by revealing where analysts should focus their attention in long evolution sequences.
 
@@ -16,8 +28,15 @@ The statistics view also serves as the primary mechanism for temporal selection.
 
 \subsection{Hierarchy View}
 \label{sec:hierarchy_view}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.9\linewidth]{figs/vis/Hierarchy.png}
+	\caption{Temporal view}
+	\label{fig:hierarchy}
+	
+\end{figure}
 
-After a time interval is selected in the statistics view, the hierarchy view provides an intermediate-level overview of the corresponding evolution region. Its role is not to expose all node-level details immediately, but to organize the selected steps into a structured representation that preserves the major hierarchical relationships among changes. In this sense, the hierarchy view acts as the bridge between global temporal summarization and detailed structural inspection.
+After a time interval is selected in the statistics view, the hierarchy view, shown as Fig.~\ref{fig:hierarchy}, provides an intermediate-level overview of the corresponding evolution region. Its role is not to expose all node-level details immediately, but to organize the selected steps into a structured representation that preserves the major hierarchical relationships among changes. In this sense, the hierarchy view acts as the bridge between global temporal summarization and detailed structural inspection.
 
 The hierarchy view visualizes the evolution sequence within the selected interval in a compact form and supports multi-granularity analysis of changed regions. Built upon the MDF representation, it allows analysts to examine how local edits aggregate into larger structural units and how these units evolve across multiple steps. This intermediate abstraction is particularly important when changes are scattered across different parts of the tree: it helps analysts reason about whether these edits belong to the same evolving branch, correspond to repeated revisions, or indicate multiple independent transformation regions.
 
@@ -25,12 +44,19 @@ By presenting change structures at multiple levels of granularity, the hierarchy
 
 \subsection{Tree Views}
 \label{sec:tree_views}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.9\linewidth]{figs/vis/tree.png}
+	\caption{Tree view}
+	\label{fig:tree}
+	
+\end{figure}
 
-The tree views occupy the bottom portion of the interface and provide details on demand. While the statistics view summarizes temporal patterns and the hierarchy view organizes changes at an intermediate level, the tree views preserve the finest-grained structural information of the selected trees. They allow analysts to inspect the original tree topology, identify exact node-level edits, and verify hypotheses formed from the higher-level views.
+The tree views (shown as Fig.~\ref{fig:tree}) occupy the bottom portion of the interface and provide details on demand. While the statistics view summarizes temporal patterns and the hierarchy view organizes changes at an intermediate level, the tree views preserve the finest-grained structural information of the selected trees. They allow analysts to inspect the original tree topology, identify exact node-level edits, and verify hypotheses formed from the higher-level views.
 
 Each tree view presents a detailed tree structure together with the local differences associated with a selected step or structural region. Through this design, analysts can examine concrete edit operations such as insertion, deletion, or move/update, and understand how these operations are embedded within the surrounding unchanged topology. The preservation of detailed context is essential because isolated change markers are often insufficient for interpretation; analysts need to see both the edit itself and its structural neighborhood.
 
-The tree views are coordinated with the hierarchy view and the statistics view. Selections made at higher levels narrow down which trees and which structural regions are displayed in detail, while observations from detailed inspection can be traced back to their broader temporal and hierarchical contexts. This coordination allows analysts to move flexibly between overview and detail without losing orientation, thereby supporting efficient exploration of both local edits and long-range evolutionary patterns.
+The tree views are coordinated with the hierarchy view and the statistics view. Selections made at higher levels narrow down which trees and which structural regions are displayed in detail, while observations from detailed inspection can be traced back to their broader temporal and hierarchical contexts. In addition, we draw linking lines across adjacent trees: when analysts hover over a node, unchanged corresponding nodes in the neighboring trees are connected, allowing users to visually trace how a node is simplified or preserved across steps. This coordination allows analysts to move flexibly between overview and detail without losing orientation, thereby supporting efficient exploration of both local edits and long-range evolutionary patterns.
 
 \subsection{Interactions}
 \label{sec:vis_interactions}
