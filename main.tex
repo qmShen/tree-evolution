@@ -34,7 +34,10 @@
 %% * evaluation
 %% * system
 %% * theory/model
-\vgtcpapertype{please specify}
+\vgtcpapertype{system}
+
+\usepackage{trimspaces}
+
 
 \newcommand{\sysname}{{\sf TRACE}}
 %\newcommand{\hive}{{\sf Apache Hive}}
@@ -77,32 +80,32 @@
 %% of the \author command. ORCID IDs can be registered at https://orcid.org/.
 %% Include only the 16-digit dashed ID.
 \author{%
-  \authororcid{Josiah S.\ Carberry}{0000-0002-1825-0097},
-  Ed Grimley, and 
-  Martha Stewart
+	\authororcid{Josiah S.\ Carberry}{0000-0002-1825-0097},
+	Ed Grimley, and 
+	Martha Stewart
 }
 
 \authorfooter{
-  %% insert punctuation at end of each item
-  \item
-  	Josiah Carberry is with Brown University.
-  	E-mail: jcarberry@example.com
-  \item
-  	Ed Grimley is with Grimley Widgets, Inc.
-  	E-mail: ed.grimley@example.com.
-
-  \item Martha Stewart is with Martha Stewart Enterprises at Microsoft
-  Research.
-  	E-mail: martha.stewart@example.com.
+	%% insert punctuation at end of each item
+	\item
+	Josiah Carberry is with Brown University.
+	E-mail: jcarberry@example.com
+	\item
+	Ed Grimley is with Grimley Widgets, Inc.
+	E-mail: ed.grimley@example.com.
+	
+	\item Martha Stewart is with Martha Stewart Enterprises at Microsoft
+	Research.
+	E-mail: martha.stewart@example.com.
 }
 
 %% Abstract section.
 \abstract{%
-  Tree-structured data are common in many domains, such as organizational hierarchies, logical query plans in relational databases, and abstract syntax trees in program analysis. In these applications, tree structures often evolve over time. Analyzing tree evolution is important for understanding how hierarchical structures change, identifying critical transition steps, and diagnosing abnormal or inefficient processes. However, visual analytics of tree evolution remains challenging. First, comparing tree topologies is difficult for analysts, and this challenge becomes even greater in evolution analysis, where they must not only identify structural differences but also understand how one tree transforms into the next. Second, local topological changes are often scattered across large unchanged contexts, making it difficult to highlight critical differences without losing structural context. Third, critical changes in long evolution sequences are usually sparse, making it hard to summarize major trends while preserving key transition steps.
-
-  To address these challenges, we propose \sysname{}, a topology-aware visual analytics framework for the evolution of tree structures. \sysname{} estimates corresponding changes between adjacent trees, thereby representing the evolution as a sequence of local change units for analysis. It further extracts difference-aware substructures that preserve essential context while reducing visual complexity, supporting effective comparison of critical topological changes. \sysname{} simplifies long sequences based on the distribution of differences to reveal salient intervals, key transition steps, and overall evolutionary trends. Moreover, \sysname{} supports multi-granularity analysis from local changes to global evolution patterns.
-
-  We evaluate \sysname{} through case studies on multiple datasets and user interviews. The results show that \sysname{} helps analysts better understand evolution processes in tree-structured data, locate key structural changes, and identify important patterns and transitions in long sequences.
+	Tree-structured data are common in many domains, such as organizational hierarchies, logical query plans in relational databases, and abstract syntax trees in program analysis. In these applications, tree structures often evolve over time. Analyzing tree evolution is important for understanding how hierarchical structures change, identifying critical transition steps, and diagnosing abnormal or inefficient processes. However, visual analytics of tree evolution remains challenging. First, comparing tree topologies is difficult for analysts, and this challenge becomes even greater in evolution analysis, where they must not only identify structural differences but also understand how one tree transforms into the next. Second, local topological changes are often scattered across large unchanged contexts, making it difficult to highlight critical differences without losing structural context. Third, critical changes in long evolution sequences are usually sparse, making it hard to summarize major trends while preserving key transition steps.
+	
+	To address these challenges, we propose \sysname{}, a topology-aware visual analytics framework for the evolution of tree structures. \sysname{} estimates corresponding changes between adjacent trees, thereby representing the evolution as a sequence of local change units for analysis. It further extracts difference-aware substructures that preserve essential context while reducing visual complexity, supporting effective comparison of critical topological changes. \sysname{} simplifies long sequences based on the distribution of differences to reveal salient intervals, key transition steps, and overall evolutionary trends. Moreover, \sysname{} supports multi-granularity analysis from local changes to global evolution patterns.
+	
+	We evaluate \sysname{} through case studies on multiple datasets and user interviews. The results show that \sysname{} helps analysts better understand evolution processes in tree-structured data, locate key structural changes, and identify important patterns and transitions in long sequences.
 }
 
 %% Keywords that describe your work. Will show as 'Index Terms' in journal
@@ -111,13 +114,13 @@
 
 %% A teaser figure can be included as follows
 \teaser{
-  \centering
-  \includegraphics[width=\linewidth, alt={A view of a city with buildings peeking out of the clouds.}]{CypressView}
-  \caption{%
-  	In the Clouds: Vancouver from Cypress Mountain.
-  	Note that the teaser may not be wider than the abstract block.%
-  }
-  \label{fig:teaser}
+	\centering
+	\includegraphics[width=\linewidth, alt={A view of a city with buildings peeking out of the clouds.}]{CypressView}
+	\caption{%
+		In the Clouds: Vancouver from Cypress Mountain.
+		Note that the teaser may not be wider than the abstract block.%
+	}
+	\label{fig:teaser}
 }
 
 %% Uncomment below to disable the manuscript note
@@ -148,22 +151,23 @@
 %% throughout the proceedings. However, if you encounter conflicts
 %% with other math-related packages, you may want to disable it.
 \usepackage{mathptmx}                  % use matching math font
+\usepackage[ruled,vlined,linesnumbered]{algorithm2e}
 
 
 % \newcommand{\squishlist}{
-%  \begin{list}{$\bullet$}
-%  { \setlength{\itemsep}{0pt}
-%    \setlength{\parsep}{3pt}
-%    \setlength{\topsep}{3pt}
-%    \setlength{\partopsep}{0pt}
-%    \setlength{\leftmargin}{1.2em}
-%    \setlength{\labelwidth}{1em}
-%    \setlength{\labelsep}{0.6em}
-%  }
-% }
-% \newcommand{\squishend}{
-%  \end{list}
-% }
+	%  \begin{list}{$\bullet$}
+		%  { \setlength{\itemsep}{0pt}
+			%    \setlength{\parsep}{3pt}
+			%    \setlength{\topsep}{3pt}
+			%    \setlength{\partopsep}{0pt}
+			%    \setlength{\leftmargin}{1.2em}
+			%    \setlength{\labelwidth}{1em}
+			%    \setlength{\labelsep}{0.6em}
+			%  }
+		% }
+	% \newcommand{\squishend}{
+		%  \end{list}
+	% }
 
 
 
@@ -177,54 +181,58 @@
 
 
 \begin{document}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%% START OF THE PAPER %%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%% The ``\maketitle'' command must be the first command after the
-%% ``\begin{document}'' command. It prepares and prints the title block.
-%% the only exception to this rule is the \firstsection command
-\input{sec/intro}
-
-\input{sec/rel}
-
-\input{sec/model}
-
-
-%% if specified like this the section will be omitted in review mode
-\acknowledgments{%
-	The authors wish to thank A, B, and C.
-  This work was supported in part by a grant from XYZ (\# 12345-67890).%
-}
-
-
-\bibliographystyle{abbrv-doi-hyperref}
-%\bibliographystyle{abbrv-doi-hyperref-narrow}
-%\bibliographystyle{abbrv-doi}
-%\bibliographystyle{abbrv-doi-narrow}
-
-\bibliography{template}
-
-
-\appendix % You can use the `hideappendix` class option to skip everything after \appendix
-
-\section{About Appendices}
-Refer to \cref{sec:appendices_inst} for instructions regarding appendices.
-
-\section{Troubleshooting}
-\label{appendix:troubleshooting}
-
-\subsection{ifpdf error}
-
-If you receive compilation errors along the lines of \texttt{Package ifpdf Error: Name clash, \textbackslash ifpdf is already defined} then please add a new line \verb|\let\ifpdf\relax| right after the \verb|\documentclass[journal]{vgtc}| call.
-Note that your error is due to packages you use that define \verb|\ifpdf| which is obsolete (the result is that \verb|\ifpdf| is defined twice); these packages should be changed to use \verb|ifpdf| package instead.
-
-
-\subsection{\texttt{pdfendlink} error}
-
-Occasionally (for some \LaTeX\ distributions) this hyper-linked bib\TeX\ style may lead to \textbf{compilation errors} (\texttt{pdfendlink ended up in different nesting level ...}) if a reference entry is broken across two pages (due to a bug in \verb|hyperref|).
-In this case, make sure you have the latest version of the \verb|hyperref| package (i.e.\ update your \LaTeX\ installation/packages) or, alternatively, revert back to \verb|\bibliographystyle{abbrv-doi}| (at the expense of removing hyperlinks from the bibliography) and try \verb|\bibliographystyle{abbrv-doi-hyperref}| again after some more editing.
-
-\end{document}
-
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%% START OF THE PAPER %%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	%% The ``\maketitle'' command must be the first command after the
+	%% ``\begin{document}'' command. It prepares and prints the title block.
+		%% the only exception to this rule is the \firstsection command
+		\input{sec/intro}
+		
+		\input{sec/rel}
+		
+		\input{sec/task}
+				
+		\input{sec/model}
+		
+		\input{sec/vis}
+		
+		
+		%% if specified like this the section will be omitted in review mode
+		\acknowledgments{%
+			The authors wish to thank A, B, and C.
+			This work was supported in part by a grant from XYZ (\# 12345-67890).%
+		}
+		
+		
+		\bibliographystyle{abbrv-doi-hyperref}
+		%\bibliographystyle{abbrv-doi-hyperref-narrow}
+		%\bibliographystyle{abbrv-doi}
+		%\bibliographystyle{abbrv-doi-narrow}
+		
+		\bibliography{template}
+		
+		
+		\appendix % You can use the `hideappendix` class option to skip everything after \appendix
+		
+		\section{About Appendices}
+		Refer to \cref{sec:appendices_inst} for instructions regarding appendices.
+		
+		\section{Troubleshooting}
+		\label{appendix:troubleshooting}
+		
+		\subsection{ifpdf error}
+		
+		If you receive compilation errors along the lines of \texttt{Package ifpdf Error: Name clash, \textbackslash ifpdf is already defined} then please add a new line \verb|\let\ifpdf\relax| right after the \verb|\documentclass[journal]{vgtc}| call.
+		Note that your error is due to packages you use that define \verb|\ifpdf| which is obsolete (the result is that \verb|\ifpdf| is defined twice); these packages should be changed to use \verb|ifpdf| package instead.
+		
+		
+		\subsection{\texttt{pdfendlink} error}
+		
+		Occasionally (for some \LaTeX\ distributions) this hyper-linked bib\TeX\ style may lead to \textbf{compilation errors} (\texttt{pdfendlink ended up in different nesting level ...}) if a reference entry is broken across two pages (due to a bug in \verb|hyperref|).
+		In this case, make sure you have the latest version of the \verb|hyperref| package (i.e.\ update your \LaTeX\ installation/packages) or, alternatively, revert back to \verb|\bibliographystyle{abbrv-doi}| (at the expense of removing hyperlinks from the bibliography) and try \verb|\bibliographystyle{abbrv-doi-hyperref}| again after some more editing.
+		
+	\end{document}
+	
