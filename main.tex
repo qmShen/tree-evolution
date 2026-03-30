@@ -101,24 +101,32 @@
 
 %% Abstract section.
 \abstract{%
-	Tree-structured data are common in many domains, such as organizational hierarchies, logical query plans in relational databases, and abstract syntax trees in program analysis. In these applications, tree structures often evolve over time. Analyzing tree evolution is important for understanding how hierarchical structures change, identifying critical transition steps, and diagnosing abnormal or inefficient processes. However, visual analytics of tree evolution remains challenging. First, comparing tree topologies is difficult for analysts, and this challenge becomes even greater in evolution analysis, where they must not only identify structural differences but also understand how one tree transforms into the next. Second, local topological changes are often scattered across large unchanged contexts, making it difficult to highlight critical differences without losing structural context. Third, critical changes in long evolution sequences are usually sparse, making it hard to summarize major trends while preserving key transition steps.
+	Tree-structured data are common in many domains, such as organizational hierarchies, logical query plans in relational databases, and abstract syntax trees in program analysis. In these applications, tree structures often evolve over time. Analyzing tree evolution is important for understanding how tree structures change, identifying critical transition steps, and diagnosing abnormal or inefficient processes. However, visual analytics of tree evolution remains challenging. First, comparing tree topologies is difficult for analysts, and this challenge becomes greater in evolution analysis, where they must not only identify structural differences but also understand how one tree transforms into the next. Second, local topological changes are often scattered across large unchanged contexts, making it difficult to highlight critical differences without losing structural context. Third, critical changes in long evolution sequences are usually sparse, making it hard to summarize major trends while preserving key transition steps.
 	
-	To address these challenges, we propose \sysname{}, a topology-aware visual analytics framework for the evolution of tree structures. \sysname{} estimates corresponding changes between adjacent trees, thereby representing the evolution as a sequence of local change units for analysis. It further extracts difference-aware substructures that preserve essential context while reducing visual complexity, supporting effective comparison of critical topological changes. \sysname{} simplifies long sequences based on the distribution of differences to reveal salient intervals, key transition steps, and overall evolutionary trends. Moreover, \sysname{} supports multi-granularity analysis from local changes to global evolution patterns.
+	To address these challenges, we propose \sysname{}, a topology-aware visual analytics framework for the evolution of tree structures.
+	\sysname{} first computes topological differences between adjacent trees and identifies changed nodes, representing the evolution as a sequence of local structural changes.
+	It then extracts and organizes difference-aware substructures that preserve essential context while reducing visual complexity, enabling effective comparison of critical topological differences.
+	Furthermore, \sysname{} traces the lifecycle of nodes throughout the evolution process, supporting localized temporal analysis of changes.
+	Building on these localized analyses, \sysname{} simplifies long sequences based on the distribution of differences to reveal salient intervals, key transition steps, and overall evolutionary trends.
+	Moreover, \sysname{} supports multi-granularity analysis from local changes to global evolution patterns.
 	
 	We evaluate \sysname{} through case studies on multiple datasets and user interviews. The results show that \sysname{} helps analysts better understand evolution processes in tree-structured data, locate key structural changes, and identify important patterns and transitions in long sequences.
 }
 
 %% Keywords that describe your work. Will show as 'Index Terms' in journal
 %% please capitalize first letter and insert punctuation after last keyword
-\keywords{Radiosity, global illumination, constant time}
+\keywords{Tree Compraison, Tree Evolution, Multi-Granularity Analysis}
 
 %% A teaser figure can be included as follows
 \teaser{
 	\centering
 	\includegraphics[width=\linewidth, alt={A view of a city with buildings peeking out of the clouds.}]{teaser}
 	\caption{%
-		In the Clouds: Vancouver from Cypress Mountain.
-		Note that the teaser may not be wider than the abstract block.%
+		The user interface of \sysname{} consists of multiple complementary views that support progressive exploration from global temporal patterns to local structural details.
+		(a) Statistics View provides a global overview of structural change distribution over the entire evolution sequence, helping analysts identify salient intervals and potential transition points.
+		(b) Hierarchy View presents the selected evolution region in a compact hierarchical form, supporting multi-granularity inspection of structural changes.
+		(c) Key Steps View highlights critical transition steps within the selected interval.
+		(d) Tree Views preserve the finest-grained tree structures and expose node-level edits for detailed inspection, enabling analysts to examine concrete edit operations within their structural context.
 	}
 	\label{fig:teaser}
 }

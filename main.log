@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  29 MAR 2026 02:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  31 MAR 2026 02:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -482,17 +482,17 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
 (c:/texlive/2023/texmf-dist/tex/latex/xcolor/svgnam.def
 File: svgnam.def 2023/11/15 v3.01 Predefined colors according to SVG 1.1 (UK)
 )
-Package hyperref Info: Option `pageanchor' set `true' on input line 183.
-Package hyperref Info: Option `plainpages' set `false' on input line 183.
-Package hyperref Info: Option `hypertexnames' set `false' on input line 183.
-Package hyperref Info: Option `bookmarksnumbered' set `false' on input line 183
+Package hyperref Info: Option `pageanchor' set `true' on input line 191.
+Package hyperref Info: Option `plainpages' set `false' on input line 191.
+Package hyperref Info: Option `hypertexnames' set `false' on input line 191.
+Package hyperref Info: Option `bookmarksnumbered' set `false' on input line 191
 .
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 183.
-Package hyperref Info: Option `breaklinks' set `true' on input line 183.
-Package hyperref Info: Option `colorlinks' set `true' on input line 183.
-Package hyperref Info: Option `nesting' set `true' on input line 183.
-Package hyperref Info: Option `linktocpage' set `true' on input line 183.
-Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 183
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 191.
+Package hyperref Info: Option `breaklinks' set `true' on input line 191.
+Package hyperref Info: Option `colorlinks' set `true' on input line 191.
+Package hyperref Info: Option `nesting' set `true' on input line 191.
+Package hyperref Info: Option `linktocpage' set `true' on input line 191.
+Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 191
 .
 
 (c:/texlive/2023/texmf-dist/tex/latex/cleveref/cleveref.sty
@@ -875,32 +875,32 @@ Package caption Info: New subtype `subfigure' on input line 238.
 Package caption Info: New subtype `subtable' on input line 238.
 \c@subtable=\count355
 )
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 18
-3.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 19
+1.
 
 (c:/texlive/2023/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 191.
+LaTeX Font Info:    ... okay on input line 191.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 191.
+LaTeX Font Info:    ... okay on input line 191.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 191.
+LaTeX Font Info:    ... okay on input line 191.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 191.
+LaTeX Font Info:    ... okay on input line 191.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 191.
+LaTeX Font Info:    ... okay on input line 191.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 191.
+LaTeX Font Info:    ... okay on input line 191.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 191.
+LaTeX Font Info:    ... okay on input line 191.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 191.
+LaTeX Font Info:    ... okay on input line 191.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 191.
+LaTeX Font Info:    ... okay on input line 191.
 
 (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -924,19 +924,19 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 183.
-Package microtype Info: Applying patch `item' on input line 183.
-Package microtype Info: Applying patch `toc' on input line 183.
-Package microtype Info: Applying patch `eqnum' on input line 183.
-Package microtype Info: Applying patch `footnote' on input line 183.
-Package microtype Info: Applying patch `verbatim' on input line 183.
+LaTeX Info: Redefining \microtypecontext on input line 191.
+Package microtype Info: Applying patch `item' on input line 191.
+Package microtype Info: Applying patch `toc' on input line 191.
+Package microtype Info: Applying patch `eqnum' on input line 191.
+Package microtype Info: Applying patch `footnote' on input line 191.
+Package microtype Info: Applying patch `verbatim' on input line 191.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 183.
+LaTeX Info: Redefining \showhyphens on input line 191.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -945,7 +945,7 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 \big@size=\dimen305
-Package hyperref Info: Link coloring ON on input line 183.
+Package hyperref Info: Link coloring ON on input line 191.
  (./main.out)
 (./main.out)
 \@outlinefile=\write4
@@ -965,11 +965,11 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 \abstractwidth=\skip90
-<figs/teaser.png, id=123, 965.5272pt x 544.434pt>
+<figs/teaser.png, id=123, 972.2724pt x 300.6432pt>
 File: figs/teaser.png Graphic file (type png)
 <use figs/teaser.png>
 Package pdftex.def Info: figs/teaser.png  used on input line 4.
-(pdftex.def)             Requested size: 467.22528pt x 263.46034pt.
+(pdftex.def)             Requested size: 467.22528pt x 144.47682pt.
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
  4.
 
@@ -1016,9 +1016,6 @@ File: diamondrule.pdf Graphic file (type pdf)
 Package pdftex.def Info: diamondrule.pdf  used on input line 4.
 (pdftex.def)             Requested size: 213.79822pt x 12.04495pt.
 
-Underfull \vbox (badness 1057) has occurred while \output is active []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1029,14 +1026,7 @@ Overfull \vbox (2.26305pt too high) has occurred while \output is active []
 3/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
 
- <./figs/teaser.png> <./diamondrule.pdf>]) (./sec/rel.tex [2]
-Underfull \vbox (badness 4492) has occurred while \output is active []
-
-)
-(./sec/task.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+ <./figs/teaser.png> <./diamondrule.pdf>]) (./sec/rel.tex [2]) (./sec/task.tex
 Overfull \vbox (2.26305pt too high) has occurred while \output is active []
 
 
@@ -1047,19 +1037,20 @@ File: figs/framework.png Graphic file (type png)
 Package pdftex.def Info: figs/framework.png  used on input line 61.
 (pdftex.def)             Requested size: 490.07124pt x 239.18626pt.
 ) (./sec/model.tex [4]
-Overfull \vbox (2.26305pt too high) has occurred while \output is active []
-
-
-[5 <./figs/framework.png (PNG copy)>]
 Underfull \hbox (badness 8094) in paragraph at lines 110--111
 []\T1/ptm/m/it/9 (+20) quantitative com-par-i-son\T1/ptm/m/n/9 (+20) , through 
 the tree edit dis-tance
  []
 
-[6]
+
+Overfull \vbox (2.26305pt too high) has occurred while \output is active []
+
+
+[5 <./figs/framework.png (PNG copy)>]
 LaTeX Font Info:    Trying to load font information for T1+txtt on input line 1
 96.
- (c:/texlive/2023/texmf-dist/tex/latex/txfonts/t1txtt.fd
+
+(c:/texlive/2023/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -1083,69 +1074,69 @@ Overfull \hbox (3.83052pt too wide) in paragraph at lines 224--224
 []\T1/txtt/m/n/9 12:        F' <- (F \ {T*(g_a), T*(g_b)}) union {S_ab}[] 
  []
 
-) (./sec/vis.tex
-<figs/vis/Temp.png, id=235, 964.0818pt x 330.9966pt>
+) (./sec/vis.tex [6]
+<figs/vis/Temp.png, id=236, 964.0818pt x 330.9966pt>
 File: figs/vis/Temp.png Graphic file (type png)
 <use figs/vis/Temp.png>
 Package pdftex.def Info: figs/vis/Temp.png  used on input line 14.
 (pdftex.def)             Requested size: 226.18555pt x 77.6529pt.
-<figs/vis/Hierarchy.png, id=237, 966.009pt x 207.174pt>
+<figs/vis/Hierarchy.png, id=238, 966.009pt x 207.174pt>
 File: figs/vis/Hierarchy.png Graphic file (type png)
 <use figs/vis/Hierarchy.png>
 Package pdftex.def Info: figs/vis/Hierarchy.png  used on input line 33.
 (pdftex.def)             Requested size: 226.18555pt x 48.50887pt.
-
-Overfull \vbox (2.26305pt too high) has occurred while \output is active []
-
-
-[7 <./figs/vis/Temp.png> <./figs/vis/Hierarchy.png>]
-<figs/vis/tree.png, id=249, 859.5312pt x 368.577pt>
+<figs/vis/tree.png, id=240, 859.5312pt x 368.577pt>
 File: figs/vis/tree.png Graphic file (type png)
 <use figs/vis/tree.png>
 Package pdftex.def Info: figs/vis/tree.png  used on input line 49.
 (pdftex.def)             Requested size: 226.18555pt x 96.99193pt.
-) (./sec/case.tex [8 <./figs/vis/tree.png>]) (./main.bbl (./main.brf)
+
+Overfull \vbox (2.26305pt too high) has occurred while \output is active []
+
+
+[7 <./figs/vis/Temp.png> <./figs/vis/Hierarchy.png> <./figs/vis/tree.png>])
+(./sec/case.tex) (./main.bbl (./main.brf)
 \tf@brf=\write5
 \openout5 = `main.brf'.
 
-)
+ [8])
 
 LaTeX Warning: Reference `sec:appendices_inst' on page 1 undefined on input lin
-e 223.
+e 231.
 
 
-Underfull \hbox (badness 1515) in paragraph at lines 230--232
+Underfull \hbox (badness 1515) in paragraph at lines 238--240
 \T1/ptm/m/n/9 (+20) If you re-ceive com-pi-la-tion er-rors along the lines of \
 T1/txtt/m/n/9 Package
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--232
+Underfull \hbox (badness 10000) in paragraph at lines 238--240
 \T1/txtt/m/n/9 ifpdf Error: Name clash, \ifpdf is already defined
  []
 
 LaTeX Font Info:    Font shape `T1/txtt/b/n' in size <9> not available
-(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 234.
+(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 242.
 
-Underfull \hbox (badness 1097) in paragraph at lines 236--238
+Underfull \hbox (badness 1097) in paragraph at lines 244--246
 \T1/txtt/m/n/9 different nesting level ...\T1/ptm/m/n/9 (+20) ) if a ref-er-enc
 e en-try is bro-
  []
 
 
-Underfull \hbox (badness 1466) in paragraph at lines 236--238
+Underfull \hbox (badness 1466) in paragraph at lines 244--246
 \T1/ptm/m/n/9 (+20) ken across two pages (due to a bug in [][]\T1/txtt/m/n/9 hy
 perref[]\T1/ptm/m/n/9 (+20) ). In this
  []
 
 
-Underfull \hbox (badness 1087) in paragraph at lines 236--238
+Underfull \hbox (badness 1087) in paragraph at lines 244--246
 \T1/ptm/m/n/9 (+20) case, make sure you have the lat-est ver-sion of the [][]\T
 1/txtt/m/n/9 hyperref
  []
 
 
-Underfull \hbox (badness 1270) in paragraph at lines 236--238
+Underfull \hbox (badness 1270) in paragraph at lines 244--246
 [][]\T1/txtt/m/n/9 \bibliographystyle{abbrv-doi-hyperref} []\T1/ptm/m/n/9 (+20)
  again af-ter some
  []
@@ -1164,18 +1155,18 @@ L3 programming layer <2024-01-04>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: BAD7A88A03BD60200B9DE0D410FEB281;5971.
+(rerunfilecheck)             Checksum: 8AF8347F9B1656CA97039AA65C97409A;5915.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: 311FBD0F0E04BBAA19ABA3277CFD1696;1712.
+(rerunfilecheck)             Checksum: 8A2322C65620363722FD6F46CD9B5F71;1876.
  ) 
 Here is how much of TeX's memory you used:
- 29246 strings out of 474165
- 548370 string characters out of 5749497
- 1956542 words of memory out of 5000000
+ 29255 strings out of 474165
+ 548445 string characters out of 5749497
+ 1952542 words of memory out of 5000000
  50543 multiletter control sequences out of 15000+600000
- 636559 words of font info for 374 fonts, out of 8000000 for 9000
+ 636934 words of font info for 380 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 92i,8n,93p,1553b,555s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 92i,8n,93p,1472b,610s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/tex
 live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dis
@@ -1188,7 +1179,7 @@ onts/type1/urw/symbol/usyr.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/symb
 ol/usyr.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/te
 xlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2023/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (9 pages, 1293115 bytes).
+Output written on main.pdf (9 pages, 1145973 bytes).
 PDF statistics:
  374 PDF objects out of 1000 (max. 8388607)
  322 compressed objects within 4 object streams

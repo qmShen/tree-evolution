@@ -1,3 +1,7 @@
+\backcite {}{{1}{(document)}{Doc-Start}}
+\backcite {}{{2}{(document)}{Doc-Start}}
+\backcite {}{{2}{(document)}{Doc-Start}}
+\backcite {}{{2}{(document)}{Doc-Start}}
 \backcite {Kopp2018TemporalTreemaps}{{2}{2.1}{subsection.5}}
 \backcite {Scheibel2018EvoCells}{{2}{2.1}{subsection.5}}
 \backcite {Hahn2014StableVoronoiTreemaps}{{2}{2.1}{subsection.5}}
@@ -10,9 +14,9 @@
 \backcite {Augsten2010PQGram}{{2}{2.2}{subsection.6}}
 \backcite {Wang2003XDiff}{{2}{2.2}{subsection.6}}
 \backcite {Chawathe1996ChangeDetection}{{2}{2.2}{subsection.6}}
-\backcite {Fluri2007ChangeDistiller}{{3}{2.2}{subsection.6}}
-\backcite {Falleri2014GumTree}{{3}{2.2}{subsection.6}}
-\backcite {Bauer2022MergeTreeEditDistance}{{3}{2.2}{subsection.6}}
+\backcite {Fluri2007ChangeDistiller}{{2}{2.2}{subsection.6}}
+\backcite {Falleri2014GumTree}{{2}{2.2}{subsection.6}}
+\backcite {Bauer2022MergeTreeEditDistance}{{2}{2.2}{subsection.6}}
 \backcite {Wongsuphasawat2011LifeFlow}{{3}{2.3}{subsection.7}}
 \backcite {Monroe2013EventFlow}{{3}{2.3}{subsection.7}}
 \backcite {Wang2014Outflow}{{3}{2.3}{subsection.7}}
