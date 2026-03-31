@@ -1,0 +1,100 @@
+\section{Data Model and Problem Definition}
+\label{sec:data_model}
+
+In this section, we define the data model that underpins \sysname{}. We first introduce the basic concepts of tree sequences and evolution steps, then describe how to detect and represent structural differences between adjacent trees. Building on these foundations, we define the difference forest representation that enables multi-granularity structural comparison, and extend the model to support cross-step tracing and sequence-level analysis.
+
+\subsection{Tree Sequence and Evolution}
+\label{sec:tree_sequence}
+
+We model a tree evolution process as an ordered sequence of trees:
+\[
+\mathcal{T} = \langle T_1, T_2, \dots, T_n \rangle,
+\]
+where each $T_i$ represents the tree state at step $i$. The ordering may be induced by time, iteration, version number, or any domain-specific progression. We assume the sequence order is meaningful and that structural evolution can be analyzed by comparing adjacent trees.
+
+The transition between two consecutive trees is called an \emph{evolution step}:
+\[
+\delta_i : T_i \rightarrow T_{i+1}.
+\]
+Each evolution step captures how the tree structure changes from one state to the next. This adjacency-based formulation has two advantages. First, it enables incremental analysis: analysts inspect evolution step by step, which is more cognitively manageable than comparing distant trees directly. Second, it provides a natural basis for identifying local changes and tracking how they accumulate over the sequence.
+
+\subsection{Adjacent-Tree Differencing}
+\label{sec:differencing}
+
+For each evolution step, we compute the structural differences between $T_i$ and $T_{i+1}$. We propose a tree differencing method that identifies a set of edit operations transforming $T_i$ into $T_{i+1}$, including node insertion, deletion, move, and update (attribute modification). 
+
+\stitle{Difference nodes}
+Let $D_i$ denote the set of nodes involved in the edit operations between $T_i$ and $T_{i+1}$. We refer to these nodes as \emph{difference nodes}. A difference node marks a local position in the tree where a structural modification occurs. The number of difference nodes, $|D_i|$, provides a simple measure of change intensity at step $i$.
+
+\stitle{Node correspondences}
+Beyond identifying which nodes have changed, the differencing method also establishes \emph{correspondences} between nodes in $T_i$ and $T_{i+1}$. Two nodes $v_i \in T_i$ and $v_{i+1} \in T_{i+1}$ are said to correspond if they represent the same logical entity across the evolution step. Nodes in $T_{i+1}$ without correspondences in $T_i$ are marked as inserted; nodes in $T_i$ without correspondences in $T_{i+1}$ are marked as deleted. These correspondences enable cross-step tracing of individual nodes throughout the evolution process.
+
+\stitle{Configurability}
+Different applications may emphasize different forms of change. The differencing process can be configured to focus on:
+\squishlist
+	\item \emph{Structural changes}: differences in tree topology (insertion, deletion, move), ignoring attribute updates;
+	\item \emph{Attribute changes}: differences in node labels or metadata, ignoring topological modifications; or
+	\item \emph{Combined changes}: both structural and attribute differences (default).
+\squishend
+This configurability allows analysts to tailor the analysis to their specific domain requirements.
+
+\subsection{Difference Forest Representation}
+\label{sec:difference_forest}
+
+Directly presenting all difference nodes can overwhelm analysts when changes are numerous or scattered across the tree. We therefore organize difference nodes into structured units called \emph{difference forests}, which preserve essential context while reducing visual complexity.
+
+\stitle{Difference subtree}
+A \emph{difference subtree} is a subtree that contains at least one difference node. For a set of difference nodes $X \subseteq D_i$, the \emph{minimum difference subtree} $T^*(X)$ is the smallest rooted subtree that covers all nodes in $X$. Intuitively, $T^*(X)$ provides just enough structural context to interpret the changes in $X$ without including excessive unchanged regions.
+
+\stitle{Difference forest}
+When difference nodes are distributed across multiple disconnected regions, a single difference subtree may be too coarse. We define a \emph{difference forest} as a set of pairwise disjoint difference subtrees that jointly cover all difference nodes:
+\[
+F_i = \{T(r_1), T(r_2), \dots, T(r_k)\},
+\]
+where each $T(r_j)$ is a difference subtree, and any two subtrees have non-overlapping node sets. A \emph{minimum difference forest (MDF)} is a difference forest in which each subtree is the minimum difference subtree for the nodes it covers.
+
+\stitle{Role in visual analysis}
+The MDF serves as an intermediate representation between two extremes: showing every difference node individually (too detailed, potentially cluttered) versus using a single large subtree (too coarse, losing local distinctions). By grouping nearby or structurally related changes into coherent units, the MDF enables the hierarchy view to present changes at multiple granularities while maintaining interpretability.
+
+\subsection{Cross-Step Node Tracing}
+\label{sec:tracing}
+
+Beyond comparing adjacent trees, analysts often need to follow how a specific node or subtree evolves across multiple steps. We support this by chaining node correspondences across the entire sequence.
+
+Given the correspondences established during differencing, we can trace the \emph{lifecycle} of each node:
+\begin{itemize}
+	\item \emph{Appearance}: the step at which a node first appears (inserted)
+	\item \emph{Existence}: steps during which the node persists, possibly with attribute changes
+	\item \emph{Disappearance}: the step at which a node is deleted
+\end{itemize}
+By aggregating lifecycles across nodes, analysts can identify structures that persist, evolve, or disappear over time, supporting the cross-step tracing task (T2).
+
+%\subsection{Sequence-Level Metrics}
+%\label{sec:sequence_metrics}
+%
+%To support the statistics view and enable sequence-level analysis, we derive summary metrics from the differencing results.
+%
+%\stitle{Change intensity}
+%The intensity of structural change at step $i$ can be measured by:
+%\begin{itemize}
+%	\item The number of difference nodes: $|D_i|$
+%	\item The number of edit operations
+%	\item The tree edit distance between $T_i$ and $T_{i+1}$
+%\end{itemize}
+%These measures are used to plot the change trend over the entire sequence, helping analysts identify steps with substantial structural modifications.
+%
+%\stitle{Change distribution}
+%We also analyze how difference nodes are distributed within the tree hierarchy. For each step, we can compute:
+%\begin{itemize}
+%	\item The depth distribution of difference nodes (changes near the root vs.\ near leaves)
+%	\item The number of distinct subtrees affected by changes
+%	\item The size of the minimum difference forest $|F_i|$
+%\end{itemize}
+%These metrics provide insights into whether changes are localized or widespread, concentrated in specific branches or scattered across the tree.
+%
+%\stitle{Salient intervals}
+%A \emph{salient interval} is a contiguous subsequence where change intensity exceeds a threshold. Formally, given a threshold $\theta$, a salient interval $[a, b]$ satisfies:
+%\[
+%\frac{1}{b-a+1} \sum_{i=a}^{b} |D_i| > \theta.
+%\]
+%Salient intervals help analysts quickly locate important transition regions in long evolution sequences, supporting the long-sequence simplification task (T3).

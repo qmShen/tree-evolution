@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  31 MAR 2026 20:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  31 MAR 2026 23:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1040,119 +1040,102 @@ File: figs/framework.png Graphic file (type png)
 <use figs/framework.png>
 Package pdftex.def Info: figs/framework.png  used on input line 61.
 (pdftex.def)             Requested size: 490.07124pt x 239.18626pt.
-) (./sec/model.tex [4]
-Underfull \hbox (badness 8094) in paragraph at lines 110--111
-[]\T1/ptm/m/it/9 (+20) quantitative com-par-i-son\T1/ptm/m/n/9 (+20) , through 
-the tree edit dis-tance
- []
+) (./sec/model_v2.tex [4]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 6
+6.
 
+(c:/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)) (./sec/vis.tex
+<figs/vis/Temp.png, id=223, 964.0818pt x 330.9966pt>
+File: figs/vis/Temp.png Graphic file (type png)
+<use figs/vis/Temp.png>
+Package pdftex.def Info: figs/vis/Temp.png  used on input line 14.
+(pdftex.def)             Requested size: 226.18555pt x 77.6529pt.
 
 Overfull \vbox (2.26305pt too high) has occurred while \output is active []
 
 
 [5 <./figs/framework.png (PNG copy)>]
-LaTeX Font Info:    Trying to load font information for T1+txtt on input line 1
-96.
+<figs/vis/Hierarchy.png, id=232, 966.009pt x 207.174pt>
+File: figs/vis/Hierarchy.png Graphic file (type png)
+<use figs/vis/Hierarchy.png>
+Package pdftex.def Info: figs/vis/Hierarchy.png  used on input line 33.
+(pdftex.def)             Requested size: 226.18555pt x 48.50887pt.
+<figs/vis/tree.png, id=234, 859.5312pt x 368.577pt>
+File: figs/vis/tree.png Graphic file (type png)
+<use figs/vis/tree.png>
+Package pdftex.def Info: figs/vis/tree.png  used on input line 49.
+(pdftex.def)             Requested size: 226.18555pt x 96.99193pt.
 
-(c:/texlive/2023/texmf-dist/tex/latex/txfonts/t1txtt.fd
+Underfull \vbox (badness 1655) has occurred while \output is active []
+
+)
+(./sec/case.tex [6 <./figs/vis/Temp.png> <./figs/vis/Hierarchy.png> <./figs/vis
+/tree.png>]
+LaTeX Font Info:    Trying to load font information for T1+txtt on input line 1
+4.
+ (c:/texlive/2023/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
 )
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `txtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+)
+(./main.bbl (./main.brf)
+\tf@brf=\write5
+\openout5 = `main.brf'.
 
-Overfull \hbox (98.33034pt too wide) in paragraph at lines 224--224
-[]\T1/txtt/m/n/9 Input: rooted tree T, difference node set D_i, weights alpha, 
-beta, lambda[] 
- []
-
-
-Overfull \hbox (79.43037pt too wide) in paragraph at lines 224--224
-[]\T1/txtt/m/n/9 9:         if S_ab overlaps any subtree in F \ {T*(g_a), T*(g_
-b)} then[] 
- []
-
-
-Overfull \hbox (3.83052pt too wide) in paragraph at lines 224--224
-[]\T1/txtt/m/n/9 12:        F' <- (F \ {T*(g_a), T*(g_b)}) union {S_ab}[] 
- []
-
-[6]) (./sec/vis.tex
-<figs/vis/Temp.png, id=234, 964.0818pt x 330.9966pt>
-File: figs/vis/Temp.png Graphic file (type png)
-<use figs/vis/Temp.png>
-Package pdftex.def Info: figs/vis/Temp.png  used on input line 14.
-(pdftex.def)             Requested size: 226.18555pt x 77.6529pt.
-<figs/vis/Hierarchy.png, id=237, 966.009pt x 207.174pt>
-File: figs/vis/Hierarchy.png Graphic file (type png)
-<use figs/vis/Hierarchy.png>
-Package pdftex.def Info: figs/vis/Hierarchy.png  used on input line 33.
-(pdftex.def)             Requested size: 226.18555pt x 48.50887pt.
-<figs/vis/tree.png, id=239, 859.5312pt x 368.577pt>
-File: figs/vis/tree.png Graphic file (type png)
-<use figs/vis/tree.png>
-Package pdftex.def Info: figs/vis/tree.png  used on input line 49.
-(pdftex.def)             Requested size: 226.18555pt x 96.99193pt.
 
 Overfull \vbox (2.26305pt too high) has occurred while \output is active []
 
 
-[7 <./figs/vis/Temp.png> <./figs/vis/Hierarchy.png> <./figs/vis/tree.png>])
-(./sec/case.tex) (./main.bbl (./main.brf)
-\tf@brf=\write5
-\openout5 = `main.brf'.
-
- [8])
+[7])
 
 LaTeX Warning: Reference `sec:appendices_inst' on page 1 undefined on input lin
-e 231.
+e 233.
 
 
-Underfull \hbox (badness 1515) in paragraph at lines 238--240
+Underfull \hbox (badness 1515) in paragraph at lines 240--242
 \T1/ptm/m/n/9 (+20) If you re-ceive com-pi-la-tion er-rors along the lines of \
 T1/txtt/m/n/9 Package
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--240
+Underfull \hbox (badness 10000) in paragraph at lines 240--242
 \T1/txtt/m/n/9 ifpdf Error: Name clash, \ifpdf is already defined
  []
 
-
-Underfull \vbox (badness 2027) has occurred while \output is active []
-
 LaTeX Font Info:    Font shape `T1/txtt/b/n' in size <9> not available
-(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 242.
+(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 244.
 
-Underfull \hbox (badness 1097) in paragraph at lines 244--246
+Underfull \hbox (badness 1097) in paragraph at lines 246--248
 \T1/txtt/m/n/9 different nesting level ...\T1/ptm/m/n/9 (+20) ) if a ref-er-enc
 e en-try is bro-
  []
 
 
-Underfull \hbox (badness 1466) in paragraph at lines 244--246
+Underfull \hbox (badness 1466) in paragraph at lines 246--248
 \T1/ptm/m/n/9 (+20) ken across two pages (due to a bug in [][]\T1/txtt/m/n/9 hy
 perref[]\T1/ptm/m/n/9 (+20) ). In this
  []
 
 
-Underfull \hbox (badness 1087) in paragraph at lines 244--246
+Underfull \hbox (badness 1087) in paragraph at lines 246--248
 \T1/ptm/m/n/9 (+20) case, make sure you have the lat-est ver-sion of the [][]\T
 1/txtt/m/n/9 hyperref
  []
 
 
-Underfull \hbox (badness 1270) in paragraph at lines 244--246
+Underfull \hbox (badness 1270) in paragraph at lines 246--248
 [][]\T1/txtt/m/n/9 \bibliographystyle{abbrv-doi-hyperref} []\T1/ptm/m/n/9 (+20)
  again af-ter some
  []
 
+[8
 
-Overfull \vbox (2.26305pt too high) has occurred while \output is active []
-
-
-[9] (./main.aux)
+] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -1162,34 +1145,33 @@ L3 programming layer <2024-01-04>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8AF8347F9B1656CA97039AA65C97409A;5915.
+(rerunfilecheck)             Checksum: DFC266A29B9CAC24B37754CFBE63C7BA;5515.
 Package rerunfilecheck Info: File `main.brf' has not changed.
 (rerunfilecheck)             Checksum: 39A3472B202BD7DF81BC3B3AEA3FA79A;1876.
  ) 
 Here is how much of TeX's memory you used:
- 29255 strings out of 474165
- 548445 string characters out of 5749497
- 1951542 words of memory out of 5000000
- 50543 multiletter control sequences out of 15000+600000
- 636934 words of font info for 380 fonts, out of 8000000 for 9000
+ 29288 strings out of 474165
+ 549089 string characters out of 5749497
+ 1954542 words of memory out of 5000000
+ 50578 multiletter control sequences out of 15000+600000
+ 634792 words of font info for 376 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  92i,8n,93p,1472b,608s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/tex
-live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/t
-ype1/public/rsfs/rsfs10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/txfo
-nts/t1xbtt.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb
-><c:/texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/20
-23/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2023/texmf-dist/f
-onts/type1/urw/symbol/usyr.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/symb
-ol/usyr.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/te
-xlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2023/texmf-d
-ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (9 pages, 1968009 bytes).
+<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/tex
+live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dis
+t/fonts/type1/public/rsfs/rsfs10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/pu
+blic/txfonts/t1xbtt.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/txfonts/
+t1xtt.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/t
+exlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2023/tex
+mf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2023/texmf-dist/fonts/type1
+/urw/symbol/usyr.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.p
+fb><c:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/202
+3/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (8 pages, 1946488 bytes).
 PDF statistics:
- 373 PDF objects out of 1000 (max. 8388607)
- 322 compressed objects within 4 object streams
- 77 named destinations out of 1000 (max. 500000)
- 70419 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 364 PDF objects out of 1000 (max. 8388607)
+ 316 compressed objects within 4 object streams
+ 76 named destinations out of 1000 (max. 500000)
+ 72467 words of extra memory for PDF output out of 74296 (max. 10000000)
 
